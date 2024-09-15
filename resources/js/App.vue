@@ -1,19 +1,17 @@
 <template>
-    <div>
-<!--        <Header />-->
-<!--        <Sidebar />-->
-        <MenuBar />
-        <FixedIncomeCalculator />
+    <header class="flex items-center justify-center p-2.5">
+        <Nav />
+    </header>
+    <main class="flex items-center justify-center h-screen">
+        <FixedIncome />
+    </main>
         <router-view></router-view>
-    </div>
+
 </template>
 
 <script setup>
-    import Sidebar from '../js/components/Sidebar.vue';
-    import Header from '../js/components/Header.vue';
-    import MenuBar from '@/components/MenuBar.vue';
-    import FixedIncomeCalculator from "@/components/FixedIncomeCalculator.vue";
-
+    import FixedIncome from "@/components/calculators/FixedIncome.vue";
+    import Nav from "@/components/Nav.vue";
 </script>
 
 <style scoped>
