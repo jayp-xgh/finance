@@ -52,7 +52,7 @@ const components: { title: string, href: string, description: string }[] = [
     <NavigationMenu>
         <NavigationMenuList>
             <NavigationMenuItem>
-                <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Matemática</NavigationMenuTrigger>
                 <NavigationMenuContent>
                     <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
                         <li class="row-span-3">
@@ -115,7 +115,7 @@ const components: { title: string, href: string, description: string }[] = [
                 </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-                <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Financeira</NavigationMenuTrigger>
                 <NavigationMenuContent>
                     <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                         <li v-for="component in components" :key="component.title">
@@ -136,7 +136,7 @@ const components: { title: string, href: string, description: string }[] = [
             </NavigationMenuItem>
             <NavigationMenuItem>
                 <NavigationMenuLink href="/docs" :class="navigationMenuTriggerStyle()">
-                    Documentation
+                    Contribuir
                 </NavigationMenuLink>
             </NavigationMenuItem>
         </NavigationMenuList>
