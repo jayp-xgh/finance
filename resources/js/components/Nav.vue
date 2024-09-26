@@ -52,92 +52,12 @@ const components: { title: string, href: string, description: string }[] = [
     <NavigationMenu>
         <NavigationMenuList>
             <NavigationMenuItem>
-                <NavigationMenuTrigger>Matemática</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                    <ul class="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[minmax(0,.75fr)_minmax(0,1fr)]">
-                        <li class="row-span-3">
-                            <NavigationMenuLink as-child>
-                                <a
-                                    class="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                    href="/"
-                                >
-                                    <img src="https://www.radix-vue.com/logo.svg" class="h-6 w-6">
-                                    <div class="mb-2 mt-4 text-lg font-medium">
-                                        shadcn/ui
-                                    </div>
-                                    <p class="text-sm leading-tight text-muted-foreground">
-                                        Beautifully designed components built with Radix UI and
-                                        Tailwind CSS.
-                                    </p>
-                                </a>
-                            </NavigationMenuLink>
-                        </li>
-                        <li>
-                            <NavigationMenuLink as-child>
-                                <a
-                                    href="/docs"
-                                    class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                >
-                                    <div class="text-sm font-medium leading-none">Introduction</div>
-                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                        Re-usable components built using Radix UI and Tailwind CSS.
-                                    </p>
-                                </a>
-                            </NavigationMenuLink>
-                        </li>
-                        <li>
-                            <NavigationMenuLink as-child>
-                                <a
-                                    href="/docs/installation"
-                                    class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                >
-                                    <div class="text-sm font-medium leading-none">Installation</div>
-                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                        How to install dependencies and structure your app.
-                                    </p>
-                                </a>
-                            </NavigationMenuLink>
-                        </li>
-                        <li>
-                            <NavigationMenuLink as-child>
-                                <a
-                                    href="/docs/primitives/typography"
-                                    class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                >
-                                    <div class="text-sm font-medium leading-none">Typography</div>
-                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                        Styles for headings, paragraphs, lists...etc
-                                    </p>
-                                </a>
-                            </NavigationMenuLink>
-                        </li>
-                    </ul>
-                </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuTrigger>Financeira</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                    <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                        <li v-for="component in components" :key="component.title">
-                            <NavigationMenuLink as-child>
-                                <a
-                                    :href="component.href"
-                                    class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                >
-                                    <div class="text-sm font-medium leading-none">{{ component.title }}</div>
-                                    <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                        {{ component.description }}
-                                    </p>
-                                </a>
-                            </NavigationMenuLink>
-                        </li>
-                    </ul>
-                </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-                <NavigationMenuLink href="/docs" :class="navigationMenuTriggerStyle()">
-                    Contribuir
-                </NavigationMenuLink>
+                <button class="bg-[#FA7777] w-auto h-10 text-white font-bold p-3.5 flex items-center rounded-full gap-3 hover:bg-[#FF6161]">
+                    Patrocinar projeto
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 fill-amber-50">
+                        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                    </svg>
+                </button>
             </NavigationMenuItem>
         </NavigationMenuList>
     </NavigationMenu>
